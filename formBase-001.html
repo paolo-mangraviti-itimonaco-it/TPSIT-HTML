@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+  <!--
+  Esempio di form con campi
+  . testo
+  . pulsanti radio
+  . caselle di spunta
+  . menu a tendina
+  -->
+  <head>
+    <title>Esempio di form 001</title>
+  </head> 
+  <body>
+    <header>
+      <h1>Modulo di ricerca</h1>
+    </header>
+    <menu>
+      <li style="float:left; margin-right:30px">Home</li>
+      <li style="float:left; margin-right:30px">Chi siamo</li>
+      <li style="float:left; margin-right:30px">Contatti</li>
+    </menu> 
+    <br>
+    <nav style="margin-top: 30px;">Ti trovi in: Home -> Modulo ricerca</nav> 
+    <main>
+      <h1>Ricerca informazioni</h1>
+      <form action="cerca.php" method="get"> 
+        <fieldset style="border-color: green;">
+          <legend>Dati di ricerca necessari</legend>
+          <label for="loc">Localit&agrave;</label>
+          <input type="text" name="loc" id="loc">
+          <br>
+          <label for="cap">CAP</label>
+          <input type="text" name="cap" id="cap">
+        </fieldset>
+        <fieldset>
+          <legend>Dati opzionali</legend>
+          <label for="tr000">Livello dei risultati</label>
+          <select name="tr000" id="tr000">
+            <option>Sommario</option>
+            <option>Approfondito</option>
+          </select>
+          <br><br>
+          <h3>Struttura</h3><br>
+          <input type="radio" name="r1" value="bn" checked>Agriturismo<br>
+          <input type="radio" name="r1" value="colore">Chalet<br>
+          <input type="radio" name="r1" value="3D">Hotel
+          <br>
+          <br>
+          <h3>Cosa puoi fare</h3><br>
+          <input type="checkbox" value="tr007" name="r3[]">pesca<br>
+          <input type="checkbox" value="tr008" name="r3[]">mtb<br>
+          <input type="checkbox" value="tr009" name="r3[]">trecking<br>
+          <input type="checkbox" value="tr010" name="r3[]">sci<br>
+          <h3>Coordinate di prossimit&agrave;</h3><br>
+          <label for="lat">latitudine</label>
+          <input type="text" name="lat" id="lat">
+          <br>
+          <label for="lon">longitudine</label>  
+          <input type="text" name="lon" id="lon">
+        </fieldset>
+        <input type="submit" value="Cerca">
+      </form>
+    </main>
+    <footer style="margin-top: 200px;">
+      Eserzicio Form (CC) classi quinte 2324
+    </footer>
+  </body>                     
+</html>
